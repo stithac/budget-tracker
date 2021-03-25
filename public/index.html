@@ -18,51 +18,53 @@
   <title>Budget Tracker</title>
 </head>
 <body>
-    <div class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-          <div class="jumbotron">
-              <h1>Personal Monthly Budget</h1>
-            <p class="lead">Prioritize your financial health with this budget tracker.  It tracks expenditures by income and expenses.</p>
+             </form>
+        </div>
+    </nav>
+        <div class="jumbotron">
+            <h1>Personal Monthly Budget</h1>
+            <p class="lead">Prioritize your financial health with this budget tracker.  The tracker allows you to add funds and subtract funds.</p>
             <div class="total">
                 <div class="total">Your total is: $<span id="total">0</span></div>
-              </div>
-          </div>
-    </div>
+            </div>
+        </div>
+
   <div class="wrapper">
     <div class="form">
       <input type="text" id="t-name" placeholder="Name of transaction" />
       <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
-      <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
-      <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
+      <button id="add-btn" class="button"><i class="fa fa-plus buttons"></i> Add Funds</button>
+      <button id="sub-btn" class="button"><i class="fa fa-minus"></i> Subtract Funds</button>
       <p class="error"></p>
     </div>
-
-    <div class="transactions">
+    <div class="transactions" style="text-align: center;">
+        <h2>Transactions</h2>
       <table>
         <thead>
           <th>Transaction</th>
           <th>Amount</th>
         </thead>
         <tbody id="tbody">
-
         </tbody>
       </table>
     </div>
+    <div style="margin-top:35px;">
+        <h2>Transactions Over Time</h2>
+        <canvas id="myChart"></canvas>
+    </div>
 
-    <canvas id="myChart"></canvas>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
