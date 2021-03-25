@@ -1,11 +1,15 @@
 body {
   font-size: 120%;
-  font-family: Arial;
+  font-family: 'Barlow', sans-serif;
 }
 
 button, input {
   font-size: 100%;
   font-family: Arial;
+}
+
+h1{
+  font-weight: bold;
 }
 
 table {
@@ -20,6 +24,29 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+.navbar {
+  background-color: #11393B;
+  font-family: 'Inria Serif', serif;
+}
+
+.navbar-brand {
+  color: #1F626E !important;
+}
+
+.navbar-brand:hover{
+  color: white !important;
+}
+
+.btn {
+  color: #1F626E;
+  border-color: #1F626E;
+}
+
+.jumbotron {
+  padding: 32px;
+  text-align: center;
 }
 
 .error {
