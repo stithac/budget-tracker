@@ -20,6 +20,12 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useUnifiedTopology: true,
   useCreateIndex: true,
   useFindAndModify: false
+})
+.then(() => {
+  console.log("Connected to Mongo database!");
+})
+.catch(err => {
+  console.error("App starting error:", err.stack);
 });
 
 // routes
