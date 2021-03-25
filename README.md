@@ -14,7 +14,7 @@ The application includes one model: transaction.js that is stored in the models 
 ## Site Images
 ### Homepage
 The homepage displays the budget tracker.  The budget total is included at the top and the transactions are listed and shown on a graph below.  The user is able to add funds and subtract funds
-![Site Homepage](./public/imgages/home-screenshot.PNG)
+![Site Homepage](./public/images/home-screenshot.PNG)
 
 ## Dependencies
 The application includes the following dependencies:
