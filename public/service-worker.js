@@ -7,7 +7,10 @@ const FILES_TO_CACHE = [
     "/manifest.webmanifest",
     "/icons/icon-192x192.png",
     "/icons/icon-512x512.png",
-    "https://cdn.jsdelivr.net/npm/chart.js@2.8.0"
+    "https://cdn.jsdelivr.net/npm/chart.js@2.8.0",
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css",
+    "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
+    "https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Inria+Serif&display=swap"
 
   ];
 
