@@ -64,7 +64,7 @@ npm i
 ```
 
 ## Known Bugs
-* There are "fetch" warnings that display when the application is first launched, however, they do not affect the functionality of the application. They will be addressed in a future release.
+* There may be "fetch" warnings that display when the application is launched. They do not affect the functionality of the application. They will be addressed in a future release.
 
 ## Technologies Used
 * node.js
